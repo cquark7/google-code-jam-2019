@@ -22,5 +22,5 @@ def decode(cip: list):
 for tc in range(int(input())):
     N, L = map(int, input().split())
     cipher = list(map(int, input().split()))
-    anagram = decode(cipher)
-    print("Case #{}: {}".format(tc+1, anagram))
+    pangram = decode(cipher)
+    print("Case #{}: {}".format(tc+1, pangram))
