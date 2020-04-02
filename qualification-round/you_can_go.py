@@ -1,6 +1,9 @@
-for tc in range(int(input())):
-    N = int(input())
-    lydia_path = input()
-    # I am such an original thinker, LoL
-    my_path = ''.join('E' if p == 'S' else 'S' for p in lydia_path)
-    print('Case #{}: {}'.format(tc + 1, my_path))
+for _ in range(1, int(input()) + 1):
+    input()
+    ans = ''
+    for i in input().strip():
+        if i == 'S':
+            ans += 'E'
+        else:
+            ans += 'S'
+    print('Case #{0}: {1}'.format(_, ans))
